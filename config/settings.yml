@@ -1,0 +1,19 @@
+development:
+  :twitter:
+    :consumer_token: t9QH8T9ee9jMGAXR1LUA
+    :consumer_secret: 1rCiqDOHwUi5EBUbdmeD0VJ83TsFdgarytljGIWNlU
+
+production:
+  :twitter:
+    :consumer_token: t9QH8T9ee9jMGAXR1LUA
+    :consumer_secret: 1rCiqDOHwUi5EBUbdmeD0VJ83TsFdgarytljGIWNlU
+
+test:
+  :twitter:
+    :consumer_token: t9QH8T9ee9jMGAXR1LUA
+    :consumer_secret: 1rCiqDOHwUi5EBUbdmeD0VJ83TsFdgarytljGIWNlU
+
+staging:
+  :twitter:
+    :consumer_token: t9QH8T9ee9jMGAXR1LUA
+    :consumer_secret: 1rCiqDOHwUi5EBUbdmeD0VJ83TsFdgarytljGIWNlU
