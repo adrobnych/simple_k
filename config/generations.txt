@@ -1,0 +1,1 @@
+rails g model User screen_name:string oauth_token:string oauth_secret:string

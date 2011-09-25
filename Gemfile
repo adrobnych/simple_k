@@ -31,3 +31,7 @@ gem 'twitter'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+group :development do
+  gem 'annotate', '2.4.0'
+end

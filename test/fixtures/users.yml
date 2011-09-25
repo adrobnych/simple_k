@@ -1,0 +1,24 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  screen_name: MyString
+  oauth_token: MyString
+  oauth_secret: MyString
+
+two:
+  screen_name: MyString
+  oauth_token: MyString
+  oauth_secret: MyString
+
+# == Schema Information
+#
+# Table name: users
+#
+#  id           :integer         not null, primary key
+#  screen_name  :string(255)
+#  oauth_token  :string(255)
+#  oauth_secret :string(255)
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+
