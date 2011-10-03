@@ -1,12 +1,1 @@
-
-<% if controller.authorized? %>
-          
-    <%= t('welcome') %>
-    <%= link_to controller.current_user.screen_name, controller.current_user.profile_url, :class => "welcome_link" %>     
-    <%= link_to t(:logout), logout_url, {:id => "logout"} %>
-          
-<% else %>
-        
-    <%= link_to image_tag("/images/twitter_button.gif"), login_url, :id => "twitter_login_but" %>
-          
-<% end %>
+<p>landing content</p>

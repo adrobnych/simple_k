@@ -1,0 +1,28 @@
+<div class="header">
+  
+  
+  <% if controller.authorized? %>
+    
+    <span class="pull-right" >
+      <%= link_to controller.current_user.screen_name, controller.current_user.profile_url, :class => "welcome_link" %>     
+    <%= link_to t(:logout), logout_url, {:id => "logout"} %>
+      </span>
+  
+    <span class="pull-right" >      
+      <%= link_to(image_tag(controller.current_user.profile_image, :size => "30x30", :border => 0), controller.current_user.profile_url, :class => "welcome_link") %>
+      <span>&nbsp</span>
+    </span>
+    
+  <% else %>
+        
+    <%= link_to image_tag("/images/twitter_button.gif"), login_url, :id => "twitter_login_but" %>
+          
+  <% end %>
+  
+  <div id="menu-box">
+    <div id="system_message">
+      <%= system_messages %>
+    </div>
+  </div>
+  
+</div>
