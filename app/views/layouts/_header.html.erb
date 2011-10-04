@@ -3,20 +3,26 @@
   
   <% if controller.authorized? %>
     
-    <span class="pull-right" >
-      <%= link_to controller.current_user.screen_name, controller.current_user.profile_url, :class => "welcome_link" %>     
-    <%= link_to t(:logout), logout_url, {:id => "logout"} %>
-      </span>
-  
-    <span class="pull-right" >      
-      <%= link_to(image_tag(controller.current_user.profile_image, :size => "30x30", :border => 0), controller.current_user.profile_url, :class => "welcome_link") %>
-      <span>&nbsp</span>
+    <span class="pull-right">
+      <ul class="nav" >
+        <li>
+          <%= link_to controller.current_user.screen_name, controller.current_user.profile_url %>
+        </li>
+        <li>
+          <%= link_to "logout", logout_url, {:id => "logout"} %>
+        </li>
+      </ul>
     </span>
     
+    <form action="" class="pull-right">
+      <%= link_to(image_tag(controller.current_user.profile_image, :size => "30x30"), controller.current_user.profile_url) %>
+    </form>
+    
+    
   <% else %>
-        
-    <%= link_to image_tag("/images/twitter_button.gif"), login_url, :id => "twitter_login_but" %>
-          
+    <form action="" class="pull-right">    
+      <%= link_to image_tag("/images/twitter_button.gif"), login_url, :id => "twitter_login_but" %>
+    </form>      
   <% end %>
   
   <div id="menu-box">
